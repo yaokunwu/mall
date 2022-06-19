@@ -31,6 +31,14 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    // test openFeign
+    @RequestMapping("/member/list")
+    public R membercoupons() {
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("buy one get one free");
+        return R.ok().put("coupon", Arrays.asList(couponEntity));
+    }
+
     /**
      * 列表
      */
