@@ -23,3 +23,9 @@ server:
 logging:
   level:
     com.newgrad.mall: debug
+alibaba:
+  cloud:
+    access-key: LTAI5tDo8HRshjvuqJ7hrsRA
+    secret-key: vcQC3J9DvSzsltDwUiQRBp5J8Dq6oB
+    oss:
+      endpoint: oss-us-west-1.aliyuncs.com

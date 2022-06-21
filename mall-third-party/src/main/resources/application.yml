@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  application:
+    name: mall-third-party
+
+server:
+  port: 30000
+
+alibaba:
+  cloud:
+    access-key: LTAI5tDo8HRshjvuqJ7hrsRA
+    secret-key: vcQC3J9DvSzsltDwUiQRBp5J8Dq6oB
+    oss:
+      endpoint: oss-us-west-1.aliyuncs.com
+      bucket: mall-newgrad
