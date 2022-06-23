@@ -3,6 +3,7 @@ package com.newgrad.mall.product;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.newgrad.mall.product.entity.BrandEntity;
 import com.newgrad.mall.product.service.BrandService;
+import com.newgrad.mall.product.service.CategoryService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,8 +16,14 @@ class MallProductApplicationTests {
     @Autowired
     BrandService brandService;
 
+    @Autowired
+    CategoryService categoryService;
 
-
+    @Test
+    public void testFindPath() {
+        Long[] catelogPath = categoryService.findCatelogPath(225L);
+        for (Long id : catelogPath) System.out.println(id);
+    }
 
     @Test
     void contextLoads() {
